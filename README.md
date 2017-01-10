@@ -34,7 +34,7 @@
 
 ````php
 
-include('./src/autoload.php');
+include('./webhookForCoding/src/autoload.php');
 
 ( new \WebHook\PullMaster('/www/web', 8090) );
 
@@ -44,7 +44,7 @@ include('./src/autoload.php');
 
 ````php
 
-include('./src/autoload.php');
+include('./webhookForCoding/src/autoload.php');
 
 ( new \WebHook\PullDevelop('/www/web', 8090) );
 
@@ -56,13 +56,13 @@ include('./src/autoload.php');
 
 举例:  
 
-alconSeek 项目的 master 分支就设置为 your_ip/webhookForCoding/alconSeek.master.php  
+alconSeek 项目的 master 分支就设置为 your_ip/alconSeek.master.php  
 
-alconSeek 项目的 develop 分支就设置为 your_ip/webhookForCoding/alconSeek.develop.php  
+alconSeek 项目的 develop 分支就设置为 your_ip/alconSeek.develop.php  
 
-discuz 项目的 master 分支就设置为 your_ip/webhookForCoding/discuz.master.php  
+discuz 项目的 master 分支就设置为 your_ip/discuz.master.php  
 
-discuz 项目的 develop 分支就设置为 your_ip/webhookForCoding/discuz.develop.php  
+discuz 项目的 develop 分支就设置为 your_ip/discuz.develop.php  
 
 ...  
 
