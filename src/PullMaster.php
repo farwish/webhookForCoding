@@ -123,9 +123,6 @@ class PullMaster implements PullInterface
             }
 
             file_put_contents($this->logfile, $msg, FILE_APPEND);
-        } else {
-        
-            file_put_contents($this->logfile, 'Token不对 OR 非合并Master的请求.' . PHP_EOL, FILE_APPEND);
         }
     }
 }
