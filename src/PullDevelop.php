@@ -67,7 +67,8 @@ class PullDevelop implements PullInterface
     public function doit()
     {
         //$curfile = basename(__FILE__);
-        $curfile = basename(array_pop(debug_backtrace())['file']);
+        $array_and = debug_backtrace();
+        $curfile = basename(array_pop( $array_and )['file']);
         $project = substr( $curfile, 0, strpos($curfile, '.') );
 
         $absolute = $this->basedir . $project;
