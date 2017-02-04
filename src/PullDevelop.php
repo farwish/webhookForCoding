@@ -92,10 +92,8 @@ class PullDevelop implements PullInterface
                 ( isset($hook_array['merge_request'])
                 && ($hook_array['merge_request']['target_branch'] == 'develop') )
             ||  
-                // 直接推, 合并之后也有一次push, 次数必须为1
                 ( isset($hook_array['ref']) 
-                && ($hook_array['ref'] == 'refs/heads/develop') && ($hook_array['event'] == 'push')
-                && ( count($hook_array['commits']) == 1) )
+                && ($hook_array['ref'] == 'refs/heads/develop') && ($hook_array['event'] == 'push') )
             )   
 
             // 仅在合并成功时触发
